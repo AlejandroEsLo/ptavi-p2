@@ -28,4 +28,3 @@ if __name__ == "__main__":
         sys.exit('Operación sólo puede ser sumar o restar.')
 
     print(result)
-    print('prueba subir nuevo')
