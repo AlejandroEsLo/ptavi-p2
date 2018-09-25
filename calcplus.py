@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: aesteban
+
 """
 import sys
 
@@ -52,13 +53,19 @@ for linea in lista:
     elif operacion == 'divide':
         op_aux = int(operandos[0])
         
-        for op_final in operandos[1:]:  
+        try:
+      
+          for op_final in operandos[1:]:  
          
-            result4 = Mi_Calcu.div(op_aux,int(op_final))
-            op_aux = result4
+                result4 = Mi_Calcu.div(op_aux,int(op_final))
+                op_aux = result4
+          
+          print ('El resultado de la division es: ' + str(result4)) 
+         
+        except ZeroDivisionError:
+             sys.exit("Division by zero is not allowed")
+                
 
-        print ('El resultado de la division es: ' + str(int(result4))) 
-    
     else:
         sys.exit('ERROR')
         
