@@ -29,7 +29,7 @@ for linea in lista:
             result1 = Mi_Calcu.plus(op_aux, int(op_final))
             op_aux = result1
 
-        print ('El resultado de la suma es: ' + str(result1))
+        print('El resultado de la suma es: ' + str(result1))
 
     elif operacion == 'resta':
         op_aux = int(operandos[0])
@@ -38,7 +38,7 @@ for linea in lista:
             result2 = Mi_Calcu.minus(op_aux, int(op_final))
             op_aux = result2
 
-        print ('El resultado de la resta es: ' + str(result2))
+        print('El resultado de la resta es: ' + str(result2))
 
     elif operacion == 'multiplica':
         op_aux = 1
@@ -47,7 +47,7 @@ for linea in lista:
             result3 = Mi_Calcu.mult(op_aux, int(op_final))
             op_aux = result3
 
-        print ('El resultado de la division es: ' + str(result3))
+        print('El resultado de la division es: ' + str(result3))
 
     elif operacion == 'divide':
         op_aux = int(operandos[0])
@@ -59,7 +59,7 @@ for linea in lista:
                 result4 = Mi_Calcu.div(op_aux, int(op_final))
                 op_aux = result4
 
-            print ('El resultado de la division es: ' + str(result4))
+            print('El resultado de la division es: ' + str(result4))
 
         except ZeroDivisionError:
             sys.exit("Division by zero is not allowed")

@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 @author: aesteban
-
 """
 import sys
 
